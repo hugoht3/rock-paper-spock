@@ -22,18 +22,46 @@ function getComputerChoice() {
   return choices[randomIndex];
 }
 
+// Generate Big Bang Theory-inspired messages
+function bigBangMessage(winner, loser) {
+  const quotes = {
+    rock: {
+      scissors: "Rock crushes scissors!",
+      lizard: "Rock crushes lizard!",
+    },
+    paper: {
+      rock: "Paper covers rock!",
+      spock: "Paper disproves Spock!",
+    },
+    scissors: {
+      paper: "Scissors cuts paper!",
+      lizard: "Scissors decapitates lizard!",
+    },
+    lizard: {
+      paper: "Lizard eats paper!",
+      spock: "Lizard poisons Spock!",
+    },
+    spock: {
+      rock: "Spock vaporizes rock!",
+      scissors: "Spock smashes scissors!",
+    },
+  };
+
+  return `${quotes[winner][loser]} Classic Sheldon logic!`;
+}
+
 // Determine the winner
 function determineWinner(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
-    return "It's a tie!";
+    return "Bazinga! It's a tie!";
   } else if (rules[playerChoice].includes(computerChoice)) {
     playerScore++;
     playerScoreSpan.textContent = playerScore;
-    return `You win! ${playerChoice} beats ${computerChoice}.`;
+    return `You win! ${bigBangMessage(playerChoice, computerChoice)}`;
   } else {
     computerScore++;
     computerScoreSpan.textContent = computerScore;
-    return `You lose! ${computerChoice} beats ${playerChoice}.`;
+    return `You lose! ${bigBangMessage(computerChoice, playerChoice)}`;
   }
 }
 

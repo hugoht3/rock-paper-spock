@@ -42,13 +42,6 @@ This project is a web-based implementation of the popular variation of Rock, Pap
 ### Scoreboard
 - The scoreboard updates dynamically, showing the player's and computer's scores.
 
-![Alt text](/assets/images/gameplay.png)
-
-## The Footer
-- Links to popular social media platforms for easy sharing and interaction with the community.
-- Social media icons provided by Font Awesome.
-
-![Alt text](/assets/images/footer.png)
 
 ## Testing
 
@@ -75,9 +68,8 @@ All buttons and features were tested for functionality on various devices:
 4. Save, and your game will be live at the provided link.
 
 ### Live Link
-[Play the Game Here!]https://github.com/hugoht3/rock-papar-spock
+[Play the Game Here!]https://hugoht3.github.io/rock-paper-spock/
 
-## Credits
 
 ### Inspiration
 - The concept and rules for *Rock, Paper, Scissors, Lizard, Spock* were inspired by *The Big Bang Theory*.
